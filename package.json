@@ -34,7 +34,5 @@
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-vue": "^9.2.0",
     "typescript": "^4.7.4"
-  },
-  "video": false,
-  "screenshotOnRunFailure": false
+  }
 }
