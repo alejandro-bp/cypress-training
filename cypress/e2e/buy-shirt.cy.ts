@@ -37,6 +37,5 @@ describe("Buy a t-shirt", () => {
     paymentStepPage.paymentMethods();
     paymentStepPage.confirmFinalOrders();
     paymentStepPage.orderConfirmations();
-
   });
 });
