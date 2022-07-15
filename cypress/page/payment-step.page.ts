@@ -17,8 +17,8 @@ class PaymentStepsPage {
         cy.get(this.confirmFinalOrder).click()
     }
 
-    public orderConfirmations(): void{
-        cy.get(this.orderConfirmation).should("have.text", "Your order on My Store is complete.");
+    public orderConfirmations(){
+        return cy.get(this.orderConfirmation)
     }
 }
 

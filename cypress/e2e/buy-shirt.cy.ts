@@ -30,12 +30,12 @@ describe("Buy a t-shirt", () => {
     addressStepPage.goToCheckout();
 
     // Shipping steps
-    shippingStepPage.acceptTemrs();
+    shippingStepPage.acceptTerms();
     shippingStepPage.goToCheckoutShipping();
 
     // Payment Steps
     paymentStepPage.paymentMethods();
     paymentStepPage.confirmFinalOrders();
-    paymentStepPage.orderConfirmations();
+    paymentStepPage.orderConfirmations().should("have.text", "Your order on My Store is complete.");
   });
 });

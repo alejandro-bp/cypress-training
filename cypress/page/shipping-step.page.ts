@@ -7,7 +7,7 @@ class ShippingStepPage {
         this.proceedToCheckout = ".cart_navigation > .button > span"
     }
 
-    public acceptTemrs(): void{
+    public acceptTerms(): void{
         cy.get(this.termsAndConditions).click()
     }
     public goToCheckoutShipping(): void{
