@@ -24,7 +24,6 @@ describe("Buy a t-shirt", () => {
 
     // Login process steps
     loginPage.login("aperdomobo@gmail.com", "WorkshopProtractor");
-    loginPage.submitLogin();
 
     // Address confirmation steps
     addressStepPage.goToCheckout();
@@ -34,7 +33,7 @@ describe("Buy a t-shirt", () => {
     shippingStepPage.goToCheckoutShipping();
 
     // Payment Steps
-    paymentStepPage.paymentMethods();
+    paymentStepPage.selectBankWire();
     paymentStepPage.confirmFinalOrders();
     paymentStepPage.orderConfirmations().should("have.text", "Your order on My Store is complete.");
   });

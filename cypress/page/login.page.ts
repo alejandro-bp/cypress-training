@@ -11,8 +11,6 @@ class LoginPage {
     public login(email: string, password: string): void {
         cy.get(this.emailField).type(email);
         cy.get(this.passwordField).type(password)
-    }
-    public submitLogin(): void {
         cy.get(this.SubmitLogin).click()
     }
 }

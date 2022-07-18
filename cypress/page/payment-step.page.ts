@@ -9,7 +9,7 @@ class PaymentStepsPage {
         this.orderConfirmation = "#center_column > div > p > strong"
     }
 
-    public paymentMethods(): void{
+    public selectBankWire(): void{
         cy.get(this.paymentMethod).click()
     }
 
