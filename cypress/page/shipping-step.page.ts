@@ -4,7 +4,7 @@ class ShippingStepPage {
 
     constructor() {
         this.termsAndConditions = "#cgv"
-        this.proceedToCheckout = ".cart_navigation > .button > span"
+        this.proceedToCheckout = "button[name='processCarrier']"
     }
 
     public acceptTerms(): void{

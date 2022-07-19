@@ -5,7 +5,7 @@ class PaymentStepsPage {
 
     constructor() {
         this.paymentMethod = ".bankwire"
-        this.confirmFinalOrder = "#cart_navigation > .button > span"
+        this.confirmFinalOrder = "#cart_navigation .button-medium"
         this.orderConfirmation = "#center_column > div > p > strong"
     }
 
