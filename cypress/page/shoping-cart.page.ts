@@ -2,7 +2,7 @@ class ShopingCartPage {
     private proceedToCheckout: string
 
     constructor() {
-        this.proceedToCheckout = ".cart_navigation span"
+        this.proceedToCheckout = "a.standard-checkout[title='Proceed to checkout']"
     }
 
     public goToCheckoutSumary(): void{
