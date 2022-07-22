@@ -8,7 +8,7 @@ class ProductListPage {
 
     }
     public addToCart(): void {
-        cy.get(this.addCart).click();
+        cy.get(this.addCart).click()
     }
     public goToCheckout(): void {
         cy.get(this.proceedToCheckout).click()
